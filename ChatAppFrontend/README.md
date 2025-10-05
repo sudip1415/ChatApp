@@ -1,16 +1,97 @@
-# React + Vite
+# ChatAppFrontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for **ChatApp**, a real-time chat platform. The frontend is built with modern web technologies, providing a responsive and interactive user interface for chat functionalities.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication (sign up, login, logout)
+- Real-time chat with multiple users
+- Group and private messaging
+- Responsive UI for mobile and desktop
+- User presence/status indicator
+- Message notifications
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v14 or newer recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sudip1415/ChatApp.git
+   cd ChatApp/ChatAppFrontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+
+### Running the App
+
+To start the development server:
+
+```bash
+npm start
+```
+or
+```bash
+yarn start
+```
+
+The app will typically run at [http://localhost:3000](http://localhost:3000).
+
+### Building for Production
+
+To build the app for production:
+
+```bash
+npm run build
+```
+or
+```bash
+yarn build
+```
+
+The production-ready files will be in the `build/` directory.
+
+## Project Structure
+
+```
+ChatAppFrontend/
+├── public/
+│   └── ...         # Static assets
+├── src/
+│   ├── components/ # React components
+│   ├── pages/      # App pages/views
+│   ├── utils/      # Utility functions
+│   ├── App.js      # Main app file
+│   └── index.js    # Entry point
+├── package.json
+└── README.md
+```
+
+## Configuration
+
+- API endpoints and environment-specific variables can be configured in the `.env` file at the project root.
+- Ensure the backend server is running and accessible at the API URL specified in your frontend configuration.
+
+## Contributing
+
+Contributions are welcome! Please open issues or pull requests for improvements and bug fixes.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).
+
+---
+
+**Note:** This README is a general template. Update specific details (tech stack, commands, features) as appropriate for your implementation.
